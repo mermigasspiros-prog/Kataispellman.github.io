@@ -229,10 +229,21 @@
         <div class="card">
           <h4 style="margin-top:0">Newsletter</h4>
           <p class="small">Occasional notes on finance law and consumer protections.</p>
-          <form action="#" method="post" onsubmit="event.preventDefault(); alert('Subscribed (demo). Replace with a real provider like Buttondown or Mailchimp).');">
-            <p><label for="sub">Email</label><br><input id="sub" type="email" placeholder="you@example.com" required></p>
-            <button type="submit">Subscribe</button>
-          </form>
+        <form
+  action="https://buttondown.com/api/emails/embed-subscribe/Katai"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/Katai', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.com/refer/Katai" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
         </div>
       </div>
     </section>
